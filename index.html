@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="autor" content="Emma Ogbuabor">
+        <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML.">
+<title>My First Web Page</title>
+<link rel="icon" href="img/" type="img/Html.jpg"> 
+<link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+
+    <body>
+        <header>
+        <h1>My Goals for the Year</h1>
+
+        <nav aria-label="Primary Navigation">
+            <ul>
+                <li>
+                    <a href="#html">Learning HTML</a>
+               </li>
+
+                <li>
+                     <a href="#vacation">Planing a vacation</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact me</a>
+               </li>
+            </ul>
+        </nav>
+
+        <hr>
+    </header>
+
+<main>
+    <article id="html">
+<section>
+        <h2>I am ready to learn HTML</h2>
+        <p>This is my first web page</p>
+        <figure>
+        <img src="img/img/Emma Ogbuabor.jpg" alt="Emma Ogbuabor ready to leaen HTML" width="200" height="250" title="ready to learn html">
+    <figcaption>Emma Ogbuabor</figcaption>
+    <p>
+        <code>&lt;h1&gt;Hello World&lt;h2/&gt;</code>
+    </p>
+    </figure>
+</section>
+
+       <section>
+         <h3>My daily schedule</h3>
+        <p>Let me tell you how:</p>
+            <ol>
+            <li>...I learn more about web dev.</li>
+            <li>...I plan out my schedule.</li>
+            <li>...I use my resources from <abbr title=" Mozilla Developer Network"> 
+                <a href="https://developer.mozilla.org/">MDN</a>
+            </abbr>. </li>
+        </ol>
+<aside>
+    <details>
+        <summary>Guess the <mark>number of hours</mark> I code per a day</summary>
+        <p>I start at <time datetime="8:00">8 am</time> and I write code for <time datetime="PT3H">3 hours</time> every morning</p>
+    </details>
+</aside>
+<br>
+<table>
+    <tr>
+        <th>Time</th>
+        <th>Activity</th>
+    </tr>
+    <tr>
+        <td>
+            <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+        </td>
+        <td>Write Code</td>
+   
+</tr>
+<tr>
+    <td>
+        <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+    </td>
+    <td>Eat Lunch</td>
+</tr>
+<tr>
+    <td>
+        <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
+    </td>
+    <td>Study for other cousres</td>
+</tr>
+</table>
+      </section>
+    </article>
+
+        <hr>
+
+<article id="vacation">
+        <h2>I am also planing a vacation</h2>
+         <p>I have been working hard and <em>really need a gateway.</p>
+           
+        <p>I live in Nsukka so I want to vist <abbr title="University of Nigeria Nsukka">
+         <a href="www.unn.edu.ng">UNN</a>
+        </abbr> </p>
+        <figure>
+        <img src="img/img/unn logo.png.png" alt="University of Nigeria logo" width="200" height="250" title="University of Nigeria Nsukka logo" loading="lazy">
+        <figcaption>University of Nigeria logo</figcaption>
+    </figure>
+<section>
+        <h3>Places I would like to visit</h3>
+        <ul>
+       <li>
+        <p>I have heard go things about Nsukka</p>
+       </li>
+       <li>
+        <p>I have good things about going here:</p>
+        <address>
+            Energy Center of the University of Nigeria Nsukka in Enugu State.
+        </address>
+    </li>
+    </ul>
+</section>
+    <!--- TODO: Add more places-->
+<section>
+        <h3>Places I want to Avoid</h3>
+        <dl>
+            <dt>North pole</dt>
+            <dd>I hear this is <strong>cold</strong></dd>
+            <dt>South pole</dt>
+            <dd>I hear this is also cold</dd>
+            <dt>Mountain tops</dt>
+            <dd>These are also cold</dd>
+        </dl>
+ </section>
+</article>
+
+<hr>
+
+
+<article id="contact">
+    <h2>Contact me</h2>
+    <p>I'd really like to hear from you!</p>
+
+    <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+            <legend>Personal Info</legend>
+    <label for="firstName">First Name</label>
+    <input type="text" name="firstName" id="firstName" placeholder="Toby" autocomplete="on" required autofocus>
+</p>
+<p>
+    <label for="lastName">Last Name</label>
+    <input type="text" name="Last sName" id="lastName" placeholder="Tony" autocomplete="on" required>
+</p>
+<p>
+    <label for="Password">Password</label>
+    <input type="text" name="Last sName" id="Password" placeholder="your secret" required>
+</p>
+<p>
+    <label for="phone">Phone</label>
+    <input type="text" name="Tel" id="Phone" placeholder="2345555555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+</p>
+<p>
+    <label for="decade">Favorite Decade</label>
+    
+    <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
+</p>
+    <p>
+        <label for="beer">Favorite Beer</label>
+        <select name="beer" id="beer" multiple size="5">
+            <optgroup label="Premium">
+            <option value="budwiser">Budwiser</option>
+            <option value="heinken">Heinken</option>
+        </optgroup>
+        <optgroup label="Classic">
+            <option value="hero">Hero</option>
+            <option value="life">Life</option>
+            <option value="stout">Stout</option>
+            <option value="legend">Legend</option>
+        </optgroup>
+            <option value="other">Other</option>
+        </select>
+    </p>
+<!-- <p>
+    <label for="beer">Favorite Beer</label>
+    <input type="text" name="beer" id="beer" list="beer list">
+    <datalist id="beer list">
+         <option value="budwizer">
+         <option value="heinken">
+         <option value="hero">
+         <option value="life">
+         <option value="stout">
+         <option value="legend">
+         <option value="other">
+
+    </datalist>
+</p> -->
+
+</fieldset>
+<br>
+<fieldset>
+<legend>What is your favorite food</legend>
+<p>
+<input type="radio" name="food" id="rice">
+<label for="rice">Rice</label>
+</p>
+<p>
+<input type="radio" name="food" id="beans">
+<label for="beans">Beans</label>
+</p>
+<p>
+<input type="radio" name="food" id="other">
+<label for="other">Other</label>
+</p>
+</fieldset>
+<fieldset>
+    <legend>Do you have pets?</legend>
+    <p>
+        <input type="checkbox" name="pets" id="dog" value="dog">
+        <label for="dog">Dog</label>
+    </p>
+    <p>
+        <input type="checkbox" name="pets" id="cat" value="cat">
+        <label for="cat">Cat</label>
+    </p>
+
+<p>
+    <input type="checkbox" name="pets" id="fish" value="fish">
+    <label for="fish">Fish</label>
+</p>
+<p>
+    <input type="checkbox" name="pets" id="otherpet" value="otherpet">
+    <label for="otherpet">Other</label>
+</p>
+</fieldset>
+<fieldset>
+<legend>Send Me a Note</legend>
+<label for="message">Your Message:</label>
+<br>
+<textarea name="message" id="message" cols="30" rows="10" placeholder="type your message here"></textarea>    
+</fieldset>
+<br>
+<button type="submit">Submit</button>
+<button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+<button type="reset">Reset</button>
+    </form>
+</article>
+</main>
+
+        <hr>
+<footer>
+<p>
+    &lt;&lt; &copy; <a href="about.html">Emma Ogbuabor</a> &gt;&gt;
+</p>
+<p>
+    <a href="#">Back to Top</a>
+</p>
+</footer>
+    </body>
+
+</html>
